@@ -1,0 +1,606 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100vw;
+}
+
+.container main::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: url('../../assets/background.jpg') no-repeat;
+    background-size: cover;
+    filter: brightness(40%);
+    position: absolute;
+    z-index: -1;
+}
+
+.container main{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    position: relative;
+}
+
+.container main h3 {
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+
+.container main h1 {
+    font-family: 'Dancing Script';
+    font-size: 6rem;
+}
+
+.container main h4 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.container main a {
+    font-family: sans-serif;
+    text-decoration: none;
+    background: blue;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+.container main a:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+}
+
+.container .section3 {
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    background:  #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    color: #fff;
+}
+
+.container .section3 h1 {
+    font-family: sans-serif;
+    font-size: 3rem;
+}
+
+.container .section3 .images {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container .section3 .images .and {
+    font-family: 'Dancing Script';
+    font-size: 6rem;
+}
+
+.container .section3 .images img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.container .section3 .images .their-medsos {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.container .section3 .images .their-medsos .facebook a,
+.container .section3 .images .their-medsos .twitter a,
+.container .section3 .images .their-medsos .instagram a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.container .section3 .images .their-medsos img {
+    width: 30px;  
+}
+
+.container .section3 .images .image1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.container .section3 .images .image1 h2 {
+    font-family: 'Dancing Script';
+    font-size: 2rem;
+}
+
+.container .section3 .images .image1 h6 {
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.container .section1{
+    width: 100%;
+    padding: 50px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: url('../../assets/motif-batik.jpeg');
+    background-size: contain;
+}
+
+
+.container .section1 .time-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .section1 .time-title img {
+    width: 30px;
+}
+
+
+section.gallery {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: url('../../assets/motif-batik.jpeg');
+    background-size: contain;
+}
+
+section.gallery h1 {
+    font-family: 'Dancing Script';
+    font-size: 5rem;
+}
+
+section.gallery .cards-image {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+section.gallery .cards-image .card-image {
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+section.gallery .cards-image .card-image img {
+    width: 400px;
+}
+
+.container .section2 {
+    width: 100%;
+    padding: 40px;
+    background: #222;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.container .section2 .location-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .section2 .location-title .location-logo {
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid black;
+}
+
+.container .section2 .location-title img {
+    width: 30px;
+}
+
+.container .section2 h2{
+    font-size: 1.5rem;
+}
+
+.section2 .location-info {
+
+}
+
+.section2 .location-info .info-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.section2 .location-info .info-title .info-img {
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.section2 .location-info .info-title .info-img img {
+    width: 70px;
+}
+
+/*! COUNTDOWN  */
+
+.countdownCards {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 4rem;
+    width: 160px;
+    height: 170px;
+    background-color: white;
+    color: black;
+    box-shadow: 4px 4px 4px 4px black;
+    font-family: monospace;
+}
+
+#d, #h, #m, #s {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body .ket {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+section.share-love {
+    padding: 30px;
+    background-color: #222;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+section.share-love h1{
+font-family: 'Dancing Script';
+font-size: 4rem;
+}
+
+section.share-love .cards-share-love {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+section.share-love .card-body-share-love {
+    font-family: sans-serif;
+    width: 300px;
+    padding: 30px;
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}
+
+section.share-love .card-body-share-love h1 {
+    font-size: 2rem;
+}
+
+section.share-love .card-body-share-love img {
+    width: 200px;
+}
+
+section.share-love .card-body-share-love .copy-button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+section.share-love .card-body-share-love .copy-button .copy-image {
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+section.share-love .card-body-share-love .copy-button .copy-image img {
+    width: 20px;
+}
+
+section.share-love .card-body-share-love a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+section.share-love .card-body-share-love a img {
+    width: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-image: url('../../assets/motif-batik.jpeg');
+    background-size: contain;
+}
+
+footer h1 {
+    font-family: 'Dancing Script';
+}
+
+footer .card-footer {
+    width: 90%;
+    height: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #222;
+    color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+footer .footer-logo {
+    padding: 30px;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .footer-logo img {
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+footer .footer-logo span {
+    color: lightseagreen;
+}
+
+
+/* Medium devices such as tablets (768px and up) */
+@media screen and (max-width: 768px) {
+
+    .container .section1 .time-title {
+        font-size: 2rem;
+    }
+
+    .container .section1 .time-title img {
+        width: 50px;
+    }
+
+    section.gallery .cards-image .card-image img {
+        width: 250px;
+    }
+
+    .card-body {
+        width: 100px;
+        height: 110px;
+        font-size: 2rem;
+    }
+
+    .card-body .ket {
+        height: 20px;
+        font-size: 10px;
+    }
+}
+
+/* Small devices such as large phones (640px and up) */
+@media screen and (max-width: 576px) {
+    .container main h3 {
+        font-family: sans-serif;
+        font-size: 1rem;
+    }
+    
+    .container main h1 {
+        font-family: 'Dancing Script';
+        font-size: 3rem;
+    }
+    
+    .container main h4 {
+        font-family: sans-serif;
+        font-size: .6rem;
+    }
+
+    .container .section3 h1 {
+        font-size: 1.5rem;
+    }
+
+    .container .section3 .images {
+        gap: 20px;
+    }
+
+    .container .section3 .images .and {
+        font-size: 50px;
+    }
+
+    .container .section3 .images .image1 {
+        gap: 10px;
+    }
+
+    .container .section3 .images .image1 img {
+        width: 80px;
+    }
+
+    .container .section3 .images .image1 h6 {
+        font-size: 10px;
+    }
+
+    .container .section3 .images .their-medsos img {
+        width: 10px;  
+    }
+
+    .container .section3 .images .their-medsos {
+        width: 100px;
+    }
+
+    .container .section1 .time-title {
+        font-size: 1rem;
+    }
+
+    .container .section1 .time-title img {
+        width: 30px;
+    }
+
+    section.gallery h1 {
+        font-size: 2.5rem;
+    }
+
+    section.gallery .cards-image .card-image img {
+        width: 250px;
+    }
+
+    .countdownCards {
+        height: 10vh;
+        gap: 15px;
+    }
+
+    .card-body {
+        width: 60px;
+        height: 70px;
+        font-size: 20px;
+        box-shadow: 1px 1px 1px 1px black;
+    }
+
+    .card-body .ket {
+        height: 20px;
+        font-size: 10px;
+    }
+
+    iframe {
+        width: 100vw;
+    }
+
+    section.share-love h1 {
+        font-size: 2.5rem;
+    }
+
+    section.share-love .cards-share-love {
+        flex-direction: column;
+    }
+}
