@@ -25,3 +25,32 @@ function copyText(params) {
 
     alert('Copied to clipboard')
 }
+
+//! Dissable and Enable Scroll
+const html = document.querySelector('html')
+
+
+function dissableScroll() {
+    html.style.scrollBehavior = 'auto'
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft
+
+    window.onscroll = function() {
+        window.scrollTo(screenTop, screenLeft)
+    }
+
+}
+
+
+function enableScroll() {
+    window.onscroll = function() {
+    }
+    
+    html.style.scrollBehavior = 'smooth'
+    
+    localStorage.setItem('opened', 'true')
+}
+
+if(!localStorage.getItem('opened')) {
+    dissableScroll()
+}
