@@ -191,6 +191,7 @@ section.gallery h1 {
 }
 
 section.gallery .cards-image {
+    width: 100%;
     background-color: #222;
     padding: 30px;
     border-radius: 20px;
@@ -206,7 +207,7 @@ section.gallery .cards-image {
 }
 
 section.gallery .cards-image .card-image {
-    padding: 20px;
+    padding: 10px;
     background-color: white;
     border: 2px solid black;
     box-shadow: 2px 2px 2px black;
@@ -336,6 +337,10 @@ section.share-love {
 section.share-love h1{
 font-family: 'Dancing Script';
 font-size: 4rem;
+}
+
+section.share-love p {
+    font-family: sans-serif;
 }
 
 section.share-love .cards-share-love {
@@ -600,3 +605,80 @@ footer .footer-logo span {
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 280px) {
+    .container main h1 {
+        font-size: 2rem;
+    }
+
+    .container .section3 .images .and {
+        font-size: 2rem;
+    }
+    
+    .container .section3 .images img {
+        width: 90px;
+    }
+    
+    .container .section3 .images .their-medsos {
+        width: 30px;
+        gap: 5px;
+    }
+    
+    .container .section3 .images .their-medsos .facebook a,
+    .container .section3 .images .their-medsos .twitter a,
+    .container .section3 .images .their-medsos .instagram a{
+        padding: 1px;
+    }
+    
+    .container .section3 .images .their-medsos img {
+        width: 10px;  
+    }
+    
+    .container .section3 .images .image1 {
+        gap: 10px;
+    }
+
+    .container .section3 .images .image1 h2 {
+        font-size: 1rem;
+    }
+    
+    .container .section3 .images .image1 h6 {
+        font-size: .5rem;
+    }
+
+    section.gallery .cards-image .card-image img{
+        width: 170px;
+    }
+
+    .countdownCards {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+    }
+    
+    .card-body {
+        font-size: 1rem;
+        width: 150px;
+        height: 60px;
+        box-shadow: 4px 4px 4px 4px black;
+    }
+    
+    .card-body .ket {
+        width: 100%;
+        padding: 10px;
+        font-size: 7px;
+    }
+    
+    section.share-love .card-body-share-love {
+        width: 240px;
+        padding: 30px;
+    }
+    
+    section.share-love .card-body-share-love img {
+        width: 150px;
+    }
+    
+} 
