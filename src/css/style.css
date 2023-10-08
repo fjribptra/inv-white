@@ -81,6 +81,17 @@ html {
     color: #fff;
 }
 
+.container .section3 > div {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
 .container .section3 h1 {
     font-family: sans-serif;
     font-size: 3rem;
@@ -164,13 +175,19 @@ html {
 
 .container .section1 .time-title {
     display: flex;
+    height: 100%;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
+.container .section1 .time-title h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
 .container .section1 .time-title img {
-    width: 30px;
+    width: 80px;
 }
 
 
@@ -239,7 +256,7 @@ section.gallery .cards-image .card-image img {
 }
 
 .container .section2 .location-title .location-logo {
-    padding: 5px;
+    padding: 20px;
     background-color: white;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -250,7 +267,12 @@ section.gallery .cards-image .card-image img {
 }
 
 .container .section2 .location-title img {
-    width: 30px;
+    width: 50px;
+}
+
+.container .section2 .location-title h1 {
+    font-size: 50px;
+    margin: 0;
 }
 
 .container .section2 h2{
@@ -283,6 +305,7 @@ section.gallery .cards-image .card-image img {
 
 .countdownCards {
     width: 100%;
+    max-width: 800px;
     height: 50vh;
     display: flex;
     justify-content: center;
@@ -311,9 +334,14 @@ section.gallery .cards-image .card-image img {
     align-items: center;
 }
 
+#ket-d, #ket-h, #ket-m, #ket-s{
+    margin: 0;
+}
+
 .card-body .ket {
     width: 100%;
     padding: 10px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -323,7 +351,7 @@ section.gallery .cards-image .card-image img {
 }
 
 section.share-love {
-    padding: 30px;
+    padding: 50px;
     background-color: #222;
     color: white;
     display: flex;
@@ -341,6 +369,7 @@ font-size: 4rem;
 
 section.share-love p {
     font-family: sans-serif;
+    max-width: 700px;
 }
 
 section.share-love .cards-share-love {
@@ -352,7 +381,8 @@ section.share-love .cards-share-love {
 
 section.share-love .card-body-share-love {
     font-family: sans-serif;
-    width: 300px;
+    /* width: 350px; */
+    /* height: 350px; */
     padding: 30px;
     background-color: white;
     color: black;
@@ -392,6 +422,10 @@ section.share-love .card-body-share-love .copy-button {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+}
+
+section.share-love .card-body-share-love .copy-button p {
+    margin: 0;
 }
 
 section.share-love .card-body-share-love .copy-button .copy-image {
@@ -560,8 +594,8 @@ footer .footer-logo span {
         width: 100px;
     }
 
-    .container .section1 .time-title {
-        font-size: 1rem;
+    .container .section1 .time-title h1 {
+        font-size: 20px;
     }
 
     .container .section1 .time-title img {
@@ -574,6 +608,18 @@ footer .footer-logo span {
 
     section.gallery .cards-image .card-image img {
         width: 250px;
+    }
+
+    .container .section2 .location-title .location-logo {
+        padding: 10px;
+    }
+    
+    .container .section2 .location-title img {
+        width: 20px;
+    }
+
+    .container .section2 .location-title h1 {
+        font-size: 25px;
     }
 
     .countdownCards {
@@ -589,8 +635,13 @@ footer .footer-logo span {
     }
 
     .card-body .ket {
+        width: 100%;
         height: 20px;
-        font-size: 10px;
+        line-height: 20px;
+        /* font-size: 10px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     iframe {
